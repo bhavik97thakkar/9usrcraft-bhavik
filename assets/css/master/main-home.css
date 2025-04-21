@@ -587,7 +587,7 @@
   border: 1px solid rgba(34, 48, 53, 0.17);
   padding: 40px;
   transition: all 0.3s ease;
-  min-height: 520px;
+  min-height: 450px;
 }
 
 .bx-service__card:hover {
@@ -716,7 +716,7 @@
 
 .bx-service__content {
   position: relative;
-  margin-top: 162px;
+  margin-top: 80px;
   z-index: 3;
 }
 
@@ -726,6 +726,7 @@
   transition: all 0.3s ease;
   margin-bottom: 16px;
   color: var(--bx-title-color);
+  line-height: 36px;
 }
 
 .bx-service__card:hover .bx-service__content .title {
@@ -1864,7 +1865,7 @@
 }
 
 .bx-footer__copyright {
-  background: #583ACC;
+  background: #005FFF;
   padding: 12px 0px;
 }
 

@@ -3,11 +3,11 @@
 
 /* Custom Variable Colors */
 :root {
-  --bx-primary-color: #583ACC;
+  --bx-primary-color: #005FFF;
   --bx-secondary-color: #001111;
   --bx-white-color: #fff;
   --bx-offwhite-color: #fff;
-  --bx-title-color: #583ACC;
+  --bx-title-color: #005FFF;
   --bx-paragraph-color: #3a3a3a;
   --bx-border-color: #fff;
   --bx-inter-font: "Inter Tight", sans-serif;

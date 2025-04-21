@@ -86,7 +86,7 @@
 
 .bx-header__block {
   border-bottom: 1px solid rgba(255, 255, 255, 0.16);
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--bx-white-color);
   backdrop-filter: blur(10px);
 }
 
@@ -99,7 +99,7 @@
   box-shadow: 0 8px 24px #20262e0a;
   -webkit-backdrop-filter: saturate(180%) blur(10px);
   backdrop-filter: saturate(180%) blur(10px);
-  background: #001111d4;
+  background: var(--bx-white-color);
   -webkit-animation: sticky 1.2s;
   animation: sticky 1.2s;
 }
@@ -125,7 +125,7 @@
 }
 
 .bx-header__logo {
-  border-right: 1px solid rgba(255, 255, 255, 0.16);
+  border-right: var(--bx-title-color);
   height: 100px;
   display: flex;
   align-items: center;
@@ -134,7 +134,7 @@
 
 .bx-header__logo img {
   max-width: auto;
-  height: 32px;
+  height: auto;
 }
 
 .bx-header__main {
@@ -169,7 +169,7 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 120%;
-  color: rgba(255, 255, 255, 0.65);
+  color: var(--bx-title-color);
   padding: 40px 0px;
   letter-spacing: -0.14px;
 }
@@ -181,12 +181,12 @@
 }
 
 .bx-header__nav-menu li.active a {
-  color: var(--bx-white-color);
+  color: var(--bx-title-color);
 }
 
 .bx-header__nav-menu li:hover>a,
 .bx-header__nav-menu li.active a {
-  color: var(--bx-white-color);
+  color: var(--bx-title-color);
 }
 
 /* Mega Menu  */
@@ -196,13 +196,15 @@
 
 .bx-header__nav-menu .megamenu-active:hover>a,
 .bx-header__nav-menu .megamenu-active a {
-  color: var(--bx-white-color);
+  color: var(--bx-title-color);
 }
 
 .bx-header__nav-menu .megamenu-active:hover>.dropdown-megamenu {
   transform: scale(1);
   opacity: 1;
   visibility: visible;
+  border-top: 2px solid var(--bx-primary-color);
+  /* color: var(--bx-title-color); */
 }
 
 .bx-header__nav-menu .dropdown-megamenu {
@@ -406,7 +408,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  color: rgba(255, 255, 255, 0.75);
+  color: var(--bx-secondary-color);
   line-height: 120%;
   font-size: 15px;
   font-weight: 400;
@@ -419,7 +421,7 @@
 }
 
 .bx-header__info .phone-number {
-  color: var(--bx-white-color);
+  color: var(--bx-title-color);
   font-size: 18px;
   font-weight: 700;
   line-height: 120%;
