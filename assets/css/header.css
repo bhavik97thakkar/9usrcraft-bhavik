@@ -170,7 +170,7 @@
   font-weight: 500;
   line-height: 120%;
   color: var(--bx-title-color);
-  padding: 40px 0px;
+  padding: 5px 0px;
   letter-spacing: -0.14px;
 }
 
@@ -241,7 +241,7 @@
 .mega-menu__item {
   display: block !important;
   overflow: hidden;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 4%);
+  /* box-shadow: 0 10px 15px rgba(0, 0, 0, 4%); */
   border-radius: 6px;
   padding: 0 !important;
 }

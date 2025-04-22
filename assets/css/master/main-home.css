@@ -1389,7 +1389,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 65px 100px;
-  margin-left: 340px;
+  /* margin-left: 340px; */
   margin-top: 40px;
 }
 
