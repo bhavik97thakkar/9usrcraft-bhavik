@@ -48,92 +48,186 @@
     <!-- End Preloader -->
 
     <!-- Start Mobile Menu Offcanvas -->
-    <div class="modal mobile-menu-modal offcanvas-modal fade" id="offcanvas-modal">
-        <div class="modal-dialog offcanvas-dialog">
-            <div class="modal-content">
-                <div class="modal-header offcanvas-header">
-                    <!-- Mobile Menu Logo -->
-                    <div class="offcanvas-logo">
-                        <a href="index.html"><img src="assets/images/logo-dark.png" alt="logo" /></a>
+    <header class="bx-header position-relative z-index3">
+        <div class="bx-header__inner">
+            <style>
+                .menu-heading {
+                    color: #005FFF !important;
+                    font-size: 24px;
+                    font-weight: 500;
+                }
+
+                .menu-content {
+                    padding: 18px 0;
+                }
+
+                .menu-content p {
+                    padding: 5px 0;
+                }
+            </style>
+
+            <!-- Header -->
+            <div class="bx-header__block header-main">
+                <div class="container bx-container-expand">
+                    <div class="bx-header__main d-flex">
+                        <!-- Logo  -->
+                        <div class="bx-header__logo">
+                            <a href="index.html">
+                                <img src="assets/images/logo-white.png" alt="white-logo" />
+                            </a>
+                        </div>
+                        <div class="bx-header__logo logo-2">
+                            <a href="index.html">
+                                <img src="assets/images/logo-dark.png" alt="white-logo" />
+                            </a>
+                        </div>
+
+                        <div class="bx-header__right d-flex">
+                            <!-- Nav Menu -->
+                            <nav class="bx-header__nav">
+                                <ul class="bx-header__nav-menu">
+                                    <li class="active">
+                                        <a href="index.html">Home</a>
+                                    </li>
+                                    <li class="megamenu-active">
+                                        <a href="javascript:void(0)">Services<i
+                                                class="fi fi-ss-angle-small-down"></i></a>
+
+                                        <div class="dropdown-megamenu">
+                                            <div class="megamenu-wrapper">
+                                                <!-- Single Item  -->
+                                                <div class="mega-menu__item">
+                                                    <div class="mega-menu__item-head">
+
+
+                                                    </div>
+
+                                                    <a href="cyber-security.html"> <span class="menu-heading">Cyber
+                                                            security</span></a>
+                                                    <div class="menu-content">
+                                                        <p>Regulatory Audits
+                                                        </p>
+                                                        <p>Compliance Audits
+                                                        </p>
+
+                                                        <p>Technical Security Services
+                                                        </p>
+
+                                                    </div>
+                                                </div>
+                                                <div class="mega-menu__item">
+                                                    <div class="mega-menu__item-head">
+
+
+                                                    </div>
+
+                                                    <a href="digital-transformation.html"> <span
+                                                            class="menu-heading">Digital Transformation</span></a>
+                                                    <div class="menu-content">
+                                                        <p>Cloud Services & Modernization
+                                                        </p>
+                                                        <p>Microservices Architecture & Development
+                                                        </p>
+                                                        <p>Low-Code & No-Code Development
+                                                        </p>
+                                                        <p>Enterprise Integrations & API Management
+                                                        </p>
+
+                                                    </div>
+                                                </div>
+                                                <div class="mega-menu__item">
+                                                    <div class="mega-menu__item-head">
+
+
+                                                    </div>
+
+                                                    <a href="cloud-service.html"> <span class="menu-heading">Cloud
+                                                            Services</span></a>
+                                                    <div class="menu-content">
+                                                        <p>Cloud Migration Service & Consulting
+                                                        </p>
+                                                        <p>Managed Cloud Service
+                                                        </p>
+                                                        <p>DevSecOps Assessment & Implementation Service
+                                                        </p>
+                                                        <p> Managed DevOps Service
+                                                        </p>
+                                                        <p>DevOps Process Implementation Service
+                                                        </p>
+                                                        <p>Monitoring Implementation Service
+                                                        </p>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <a href="javascript:void(0)">Products<i
+                                                class="fi fi-ss-angle-small-down"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="GRC.html">GRC - Rakshitah</a></li>
+
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <a href="javascript:void(0)">Resources<i
+                                                class="fi fi-ss-angle-small-down"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="events.html">Events</a></li>
+                                            <li><a href="blogs.html">Blogs</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <!-- <li>
+                                        <a href="javascript:void(0)">Careers<i
+                                                class="fi fi-ss-angle-small-down"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="#">Current Openings </a></li>
+                                            <li><a href="#">Company Environments</a></li>
+
+                                        </ul>
+                                    </li> -->
+
+                                    <li>
+                                        <a href="javascript:void(0)">About <i class="fi fi-ss-angle-small-down"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="about-us.html">About Us</a></li>
+                                            <li>
+                                                <a href="careers.html">Careers</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="">
+                                        <a href="contact-us.html">Contact Us</a>
+                                    </li>
+
+                                </ul>
+                            </nav>
+
+                            <!-- Header Info  -->
+                            <div class="bx-header__info d-flex">
+
+
+
+
+                                <!-- Start Mobile Menu Button -->
+                                <button type="button" class="mobile-menu-offcanvas-toggler" data-bs-toggle="modal"
+                                    data-bs-target="#offcanvas-modal">
+                                    <span class="line"></span>
+                                    <span class="line"></span>
+                                    <span class="line"></span>
+                                </button>
+                                <!-- End Mobile Menu Button -->
+                            </div>
+                        </div>
                     </div>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                        <i class="fi fi-ss-cross"></i>
-                    </button>
-                </div>
-                <div class="mobile-menu-modal-main-body">
-                    <!-- Mobile Menu Navigation -->
-                    <nav class="offcanvas__menu">
-                        <ul class="offcanvas__menu_ul">
-
-                            <li class="offcanvas__menu_li active">
-                                <a class="offcanvas__menu_item" href="index.html">Home</a>
-                            </li>
-                            <li class="offcanvas__menu_li">
-                                <a class="offcanvas__menu_item" href="javascript:void(0)">Services</a>
-                                <ul class="offcanvas__sub_menu">
-                                    <li class="offcanvas__sub_menu_li">
-                                        <a href="cyber-security.html" class="offcanvas__sub_menu_item">Cyber
-                                            Security</a>
-                                    </li>
-                                    <li class="offcanvas__sub_menu_li">
-                                        <a href="digital-transformation.html" class="offcanvas__sub_menu_item">Digital
-                                            Transformation</a>
-                                    </li>
-                                    <li class="offcanvas__sub_menu_li">
-                                        <a href="cloud-service.html" class="offcanvas__sub_menu_item">Cloud
-                                            Services</a>
-                                    </li>
-                                </ul>
-                            </li>
-
-                            <li class="offcanvas__menu_li">
-                                <a class="offcanvas__menu_item" href="javascript:void(0)">Resources</a>
-                                <ul class="offcanvas__sub_menu">
-                                    <li class="offcanvas__sub_menu_li">
-                                        <a href="events.html" class="offcanvas__sub_menu_item">Events</a>
-                                    </li>
-                                    <li class="offcanvas__sub_menu_li">
-                                        <a href="#" class="offcanvas__sub_menu_item">Blogs</a>
-                                    </li>
-
-                                </ul>
-                            </li>
-
-                            <li class="offcanvas__menu_li">
-                                <a class="offcanvas__menu_item" href="javascript:void(0)">Products</a>
-                                <ul class="offcanvas__sub_menu">
-                                    <li class="offcanvas__sub_menu_li">
-                                        <a href="#" class="offcanvas__sub_menu_item">GRC - Rakshitah</a>
-                                    </li>
-
-                                </ul>
-                            </li>
-
-
-
-                            <li class="offcanvas__menu_li">
-                                <a class="offcanvas__menu_item" href="javascript:void(0)">About</a>
-                                <ul class="offcanvas__sub_menu">
-                                    <li class="offcanvas__sub_menu_li">
-                                        <a href="about-us.html" class="offcanvas__sub_menu_item">About Us</a>
-                                    </li>
-                                    <li class="offcanvas__sub_menu_li">
-                                        <a href="careers.html" class="offcanvas__sub_menu_item">Careers</a>
-                                    </li>
-
-                                </ul>
-                            </li>
-
-                            <li class="offcanvas__menu_li active">
-                                <a class="offcanvas__menu_item" href="contact-us.html">Contact Us</a>
-                            </li>
-
-                        </ul>
-                    </nav>
                 </div>
             </div>
         </div>
-    </div>
+    </header>
     <!-- End Mobile Menu Offcanvas -->
 
     <!-- Start Header Area -->
@@ -376,7 +470,9 @@
                                         <ul class="bx-bredcrumb__menu">
                                             <li><a href="#">Services</a></li>
                                             <li>/</li>
-                                            <li><a href="#">Digital Transformation</a></li>
+                                            <li><a href="digital-transformation.html">Digital Transformation</a></li>
+                                            <li>/</li>
+                                            <li><a href="#">Microservices Architecture & Development</a></li>
                                         </ul>
                                         <h1><span>Revolutionize </span> Your Business for the Digital Age</h1>
                                         <!-- <div class="bx-hero__content-desc mt-30">
@@ -432,13 +528,11 @@
                             <div class="bx-cta-desc__content">
                                 <!-- <small class="bx-section-head__label mb-30">WHO ARE WE</small> -->
                                 <h3 class="title  mb-30">
-                                    Unlock Rapid Growth with Digital Innovation
+                                    Build Resilient, Scalable Applications with Modern Microservices
                                 </h3>
                                 <p class="mt-30">
-                                    Transform your business digitally to quickly improve efficiency, customer
-                                    experience, and competitive advantage. 9USRcraft delivers clear, innovative digital
-                                    solutions, helping you modernize apps, simplify processes, and integrate advanced
-                                    technologies seamlessly
+                                    Speed up deployments, scale seamlessly, and ensure higher system resilience with our
+                                    advanced microservices development
                                 </p>
                             </div>
                             <div class="bx-cta-desc__content " data-wow-delay=".3s" style="
@@ -446,7 +540,7 @@
                     animation-delay: 0.3s;
                     animation-name: fadeInUp;
                   ">
-                                <img src="./assets/images/service/digital-transformation.jpg" alt="" />
+                                <img src="./assets/images/service/cloud-services.jpg" alt="" />
                             </div>
                         </div>
                     </div>
@@ -464,17 +558,16 @@
                             <div class="service-details__content">
                                 <h4>Detailed Overview</h4>
                                 <p>
-                                    Digital transformation drives success and efficiency. 9USRcraft provides tailored
-                                    solutions including custom app development, API management, low-code/no-code
-                                    platforms, and enterprise integrations. Our approach clearly simplifies tech
-                                    complexities, accelerates digital adoption, and boosts business performance across
-                                    sectors like finance, healthcare, manufacturing, and startups.
+                                    9USRcraft helps businesses adopt microservices architecture to break down complex
+                                    applications into modular components, ensuring faster development cycles, improved
+                                    fault isolation, and easier scaling.
                                 </p>
 
                             </div>
                         </div>
                     </div>
                 </section>
+
 
 
                 <section class="bx-achievements section-gap bg-color-1">
@@ -494,9 +587,9 @@
                         }
                     </style>
                     <div class="container bx-container">
-                        <div class="bx-section-head text-center mb-30">
+                        <!-- <div class="bx-section-head text-center mb-30">
                             <h3>Key Cloud Services We Offer</h3>
-                        </div>
+                        </div> -->
                         <div class="row align-items-center mt-30">
                             <div class="col-lg-12 col-12">
                                 <div class="">
@@ -524,18 +617,14 @@
 
                                             <!-- Content  -->
                                             <div class="bx-service__content">
-                                                <a class="title" href="cloud-service-and-modernization.html">Cloud
-                                                    Service and Modernization</a>
+                                                <a class="title" href="#">
+                                                    Designing scalable & resilient microservices </a>
                                                 <p class="text">
-                                                    Migrate with Ease, Secure Your Future
+                                                    We design distributed systems that support dynamic scaling,
+                                                    automatic recovery, and high availability, enabling your business to
+                                                    grow without disruption.
                                                 </p>
-                                                <ul class="bx-bredcrumb__menu mt-15 bg-primary-color">
-                                                    <li>
-                                                        <a href="cloud-service-and-modernization.html"
-                                                            class="text-reset">Read
-                                                            More</a>
-                                                    </li>
-                                                </ul>
+
                                             </div>
 
                                         </div>
@@ -562,20 +651,14 @@
 
                                             <!-- Content  -->
                                             <div class="bx-service__content">
-                                                <a class="title"
-                                                    href="microservices-architecture-and-development.html">Microservices
-                                                    Architecture and Development</a>
+                                                <a class="title" href="#"> API-first approach with RESTful & GraphQL
+                                                    APIs</a>
                                                 <p class="text">
-                                                    Deploy faster, automate effectively, and ensure reliability through
-                                                    our managed DevOps solutions.
+                                                    We create robust APIs as the foundation of your architecture,
+                                                    ensuring smooth integration across platforms and allowing future
+                                                    flexibility.
                                                 </p>
-                                                <ul class="bx-bredcrumb__menu mt-15 bg-primary-color">
-                                                    <li>
-                                                        <a href="microservices-architecture-and-development.html"
-                                                            class="text-reset">Read
-                                                            More</a>
-                                                    </li>
-                                                </ul>
+
                                             </div>
 
                                         </div>
@@ -602,18 +685,13 @@
 
                                             <!-- Content  -->
                                             <div class="bx-service__content">
-                                                <a class="title" href="low-and-no-code-development.html">Low-Code &
-                                                    No-Code Development</a>
+                                                <a class="title" href="#"> Containerization & Orchestration </a>
                                                 <p class="text">
-                                                    Build Faster, Launch Sooner
+                                                    We package microservices in containers and manage them using
+                                                    Kubernetes to achieve efficient deployment, scalability, and
+                                                    resource optimization.
                                                 </p>
-                                                <ul class="bx-bredcrumb__menu mt-15 bg-primary-color">
-                                                    <li>
-                                                        <a href="low-and-no-code-development.html"
-                                                            class="text-reset">Read
-                                                            More</a>
-                                                    </li>
-                                                </ul>
+
                                             </div>
 
                                         </div>
@@ -643,24 +721,49 @@
 
                                             <!-- Content  -->
                                             <div class="bx-service__content">
-                                                <a class="title"
-                                                    href="enterprise-integration-and-api-management.html">Enterprise
-                                                    Integrations & API Management</a>
+                                                <a class="title" href="#"> Service Mesh Implementation </a>
                                                 <p class="text">
-                                                    Connect, Simplify, Scale
+                                                    We build service meshes to enhance service discovery, communication
+                                                    security, traffic management, and observability across
+                                                    microservices.
                                                 </p>
-                                                <ul class="bx-bredcrumb__menu mt-15 bg-primary-color">
-                                                    <li>
-                                                        <a href="enterprise-integration-and-api-management.html"
-                                                            class="text-reset">Read
-                                                            More</a>
-                                                    </li>
-                                                </ul>
+
                                             </div>
 
                                         </div>
 
+                                        <div class="bx-service__card">
+                                            <!-- Bg Image  -->
+                                            <div class="bx-service__image">
+                                                <img src="assets/images/main-home/service/service-img-2.png"
+                                                    alt="service-img-2">
+                                            </div>
+                                            <div class="bx-service__cover">
+                                                <!-- Image -->
+                                                <div class="bx-service__img">
+                                                    <img src="assets/images/main-home/service/service-2.png"
+                                                        alt="service-2">
+                                                </div>
 
+                                                <!-- Icon  -->
+                                                <div class="bx-service__icon">
+                                                    <img src="assets/images/main-home/service/service-2.png" alt="icon">
+                                                </div>
+
+                                            </div>
+
+                                            <!-- Content  -->
+                                            <div class="bx-service__content">
+                                                <a class="title" href="#"> Event-Driven & Reactive Systems </a>
+                                                <p class="text">
+                                                    We design event-driven architectures that respond quickly to
+                                                    real-time data and interactions, improving system responsiveness and
+                                                    scalability.
+                                                </p>
+
+                                            </div>
+
+                                        </div>
 
                                     </div>
 
@@ -670,273 +773,8 @@
                     </div>
                 </section>
 
-                <section class="bx-achievements section-gap bg-color-1" style="display:none">
-                    <style>
-                        .bx-achievements__funfact {
-                            display: grid;
-                            grid-template-columns: repeat(3, 1fr);
-                            gap: 132px;
-                            justify-content: center;
-                        }
 
-                        .work-process__item {
-                            border: 1px solid var(--bx-title-color);
-                            padding: 20px;
-                            border-radius: 8px;
-                            /* border: 1px solid rgba(34, 48, 53, 0.17); */
-                        }
-                    </style>
-                    <div class="container bx-container">
-                        <div class="bx-section-head text-center mb-30">
-                            <h3>Key Cloud Services We Offer</h3>
-                        </div>
-                        <div class="row align-items-center mt-30">
-                            <div class="col-lg-12 col-12">
-                                <div class="">
-                                    <div class="service-work-process__wrapper mt-30">
-                                        <!-- Single Item  -->
-                                        <div class="work-process__item " data-wow-delay=".3s" style="
-                                        visibility: visible;
-                                        animation-delay: 0.3s;
-                                        animation-name: fadeInUp;
-                                      ">
-                                            <span class="number">01</span>
-                                            <h4 class="title">Custom Cloud-Native Development</h4>
-                                            <p class="text">
-                                                <b>Build Modern, Scalable Apps</b>
-                                            </p>
-                                            <div class="read-more-container">
-                                                <span class="more" style="display: none;">
-                                                    <p class="text mt-15">
-                                                        Craft applications designed specifically for cloud environments
-                                                        using powerful frameworks such as .NET, Java, Python, and React.
-                                                        This ensures your applications scale efficiently, remain
-                                                        resilient, and integrate smoothly with existing tech stacks. Our
-                                                        developers create highly functional, easy-to-maintain solutions
-                                                        that accelerate growth.
-                                                    </p>
-                                                    <!-- <p class="mt-15"><b>Infrastructure Migration:</b> We move your
-                                                        servers safely, keeping critical functions online...</p>
-                                                    <p class="mt-15"><b>Application Migration:</b> Shift your apps
-                                                        smoothly. We optimize performance, minimize downtime...</p>
-                                                    <p class="mt-15"><b>Database Migration:</b> Protect your data
-                                                        integrity during migration...</p>
-                                                    <p class="mt-15"><b>Cloud Security & Compliance:</b> Safeguard your
-                                                        cloud environment...</p> -->
-                                                </span>
-
-                                                <ul class="bx-bredcrumb__menu mt-15">
-                                                    <li>
-                                                        <a href="javascript:void(0);"
-                                                            class="bx-hero__content-desc read-more-btn">Read More</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-
-                                        </div>
-
-                                        <!-- Single Item  -->
-                                        <div class="work-process__item">
-                                            <span class="number">02</span>
-                                            <h4 class="title">Microservices Architecture & Development</h4>
-                                            <p class="text">
-                                                <b>Flexible, Scalable Solutions</b>
-                                            </p>
-                                            <div class="read-more-container">
-                                                <span class="more" style="display: none;">
-                                                    <p class="text mt-15">
-                                                        Develop modular, resilient microservices tailored to your
-                                                        business needs. We employ an API-first approach,
-                                                        containerization, and orchestration with Docker and Kubernetes,
-                                                        alongside advanced service mesh and event-driven designs. These
-                                                        architectures enhance system flexibility, ease updates, and
-                                                        improve overall system reliability.
-                                                    </p>
-                                                    <!-- <p class="mt-15"><b> Infrastructure Management:</b> We handle your
-                                                        cloud resources carefully, ensuring high availability and
-                                                        reliable performance. Our experts proactively manage and
-                                                        maintain your cloud infrastructure.</p>
-                                                    <p class="mt-15"><b>Monitoring & Observability:</b> Stay ahead of
-                                                        potential issues. We implement tools to spot and resolve
-                                                        problems quickly, keeping downtime minimal.</p>
-                                                    <p class="mt-15"><b>Database Migration:</b> Protect your data
-                                                        integrity during migration...</p>
-                                                    <p class="mt-15"><b>Cloud Security & Compliance:</b> Safeguard your
-                                                        cloud environment...</p> -->
-                                                </span>
-
-                                                <ul class="bx-bredcrumb__menu mt-15">
-                                                    <li>
-                                                        <a href="javascript:void(0);"
-                                                            class="bx-hero__content-desc read-more-btn">Read More</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-
-                                        </div>
-
-                                        <!-- Single Item  -->
-                                        <div class="work-process__item">
-                                            <span class="number">03</span>
-                                            <h4 class="title">Serverless Computing</h4>
-                                            <p class="text">
-                                                <b>Efficient, Agile Solutions</b>
-                                            </p>
-                                            <div class="read-more-container">
-                                                <span class="more" style="display: none;">
-                                                    <p class="text mt-15">
-                                                        Adopt serverless technologies like Azure Functions and AWS
-                                                        Lambda to streamline operations and reduce infrastructure
-                                                        overhead. Serverless computing improves scalability,
-                                                        responsiveness, and cost efficiency. Our solutions ensure
-                                                        seamless integration, clear cost control, and rapid deployment.
-                                                    </p>
-                                                    <!-- <p class="mt-15"><b> Infrastructure Management:</b> We handle your
-                                                        cloud resources carefully, ensuring high availability and
-                                                        reliable performance. Our experts proactively manage and
-                                                        maintain your cloud infrastructure.</p>
-                                                    <p class="mt-15"><b>Monitoring & Observability:</b> Stay ahead of
-                                                        potential issues. We implement tools to spot and resolve
-                                                        problems quickly, keeping downtime minimal.</p>
-                                                    <p class="mt-15"><b>Database Migration:</b> Protect your data
-                                                        integrity during migration...</p>
-                                                    <p class="mt-15"><b>Cloud Security & Compliance:</b> Safeguard your
-                                                        cloud environment...</p> -->
-                                                </span>
-
-                                                <ul class="bx-bredcrumb__menu mt-15">
-                                                    <li>
-                                                        <a href="javascript:void(0);"
-                                                            class="bx-hero__content-desc read-more-btn">Read More</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="service-work-process__wrapper mt-30">
-                                        <!-- Single Item  -->
-                                        <div class="work-process__item">
-                                            <span class="number">04</span>
-                                            <h4 class="title">Hybrid & Multi-Cloud Strategies</h4>
-                                            <p class="text">
-                                                <b>Leverage Cloud Flexibility</b>
-                                            </p>
-                                            <div class="read-more-container">
-                                                <span class="more" style="display: none;">
-                                                    <p class="text mt-15">
-                                                        Implement hybrid and multi-cloud approaches to benefit from
-                                                        diverse cloud providers. Our strategies optimize resource use,
-                                                        enhance resilience, and support agile operations. Clearly
-                                                        navigate complexity with solutions tailored to your unique
-                                                        requirements, ensuring secure, consistent performance.
-                                                    </p>
-                                                    <!-- <p class="mt-15"><b> Infrastructure Management:</b> We handle your
-                                                        cloud resources carefully, ensuring high availability and
-                                                        reliable performance. Our experts proactively manage and
-                                                        maintain your cloud infrastructure.</p>
-                                                    <p class="mt-15"><b>Monitoring & Observability:</b> Stay ahead of
-                                                        potential issues. We implement tools to spot and resolve
-                                                        problems quickly, keeping downtime minimal.</p>
-                                                    <p class="mt-15"><b>Database Migration:</b> Protect your data
-                                                        integrity during migration...</p>
-                                                    <p class="mt-15"><b>Cloud Security & Compliance:</b> Safeguard your
-                                                        cloud environment...</p> -->
-                                                </span>
-
-                                                <ul class="bx-bredcrumb__menu mt-15">
-                                                    <li>
-                                                        <a href="javascript:void(0);"
-                                                            class="bx-hero__content-desc read-more-btn">Read More</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-
-                                        <!-- Single Item  -->
-                                        <div class="work-process__item">
-                                            <span class="number">05</span>
-                                            <h4 class="title">Low-Code & No-Code Development</h4>
-                                            <p class="text">
-                                                <b>Rapid, Effective Application Development</b>
-                                            </p>
-                                            <div class="read-more-container">
-                                                <span class="more" style="display: none;">
-                                                    <p class="text mt-15">
-                                                        Accelerate application development using Mendix’s
-                                                        low-code/no-code platforms. We facilitate quick deployment,
-                                                        streamline business process automation, and enable citizen
-                                                        developers within clear governance structures. Enhance agility
-                                                        and empower your teams to innovate without heavy coding
-                                                        requirements.
-                                                    </p>
-                                                    <!-- <p class="mt-15"><b> Infrastructure Management:</b> We handle your
-                                                        cloud resources carefully, ensuring high availability and
-                                                        reliable performance. Our experts proactively manage and
-                                                        maintain your cloud infrastructure.</p>
-                                                    <p class="mt-15"><b>Monitoring & Observability:</b> Stay ahead of
-                                                        potential issues. We implement tools to spot and resolve
-                                                        problems quickly, keeping downtime minimal.</p>
-                                                    <p class="mt-15"><b>Database Migration:</b> Protect your data
-                                                        integrity during migration...</p>
-                                                    <p class="mt-15"><b>Cloud Security & Compliance:</b> Safeguard your
-                                                        cloud environment...</p> -->
-                                                </span>
-
-                                                <ul class="bx-bredcrumb__menu mt-15">
-                                                    <li>
-                                                        <a href="javascript:void(0);"
-                                                            class="bx-hero__content-desc read-more-btn">Read More</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-
-                                        <!-- Single Item  -->
-                                        <div class="work-process__item">
-                                            <span class="number">06</span>
-                                            <h4 class="title">Enterprise Integrations & API Management</h4>
-                                            <p class="text">
-                                                Streamlined Connectivity
-                                            </p>
-                                            <div class="read-more-container">
-                                                <span class="more" style="display: none;">
-                                                    <p class="text mt-15">
-                                                        Simplify complex enterprise integrations with powerful tools
-                                                        like Azure Integration Services, ESB implementations, and API
-                                                        management. We ensure smooth, secure, and efficient data
-                                                        exchange across systems, optimizing workflows and clearly
-                                                        enhancing operational effectiveness.
-                                                    </p>
-                                                    <!-- <p class="mt-15"><b> Infrastructure Management:</b> We handle your
-                                                        cloud resources carefully, ensuring high availability and
-                                                        reliable performance. Our experts proactively manage and
-                                                        maintain your cloud infrastructure.</p>
-                                                    <p class="mt-15"><b>Monitoring & Observability:</b> Stay ahead of
-                                                        potential issues. We implement tools to spot and resolve
-                                                        problems quickly, keeping downtime minimal.</p>
-                                                    <p class="mt-15"><b>Database Migration:</b> Protect your data
-                                                        integrity during migration...</p>
-                                                    <p class="mt-15"><b>Cloud Security & Compliance:</b> Safeguard your
-                                                        cloud environment...</p> -->
-                                                </span>
-
-                                                <ul class="bx-bredcrumb__menu mt-15">
-                                                    <li>
-                                                        <a href="javascript:void(0);"
-                                                            class="bx-hero__content-desc read-more-btn">Read More</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="bx-service section-gap">
+                <section class="bx-service section-gap" style="display: none;">
                     <div class="container bx-container">
                         <div class="bx-section-head text-center">
                             <h3>Benefits of Our Cloud Services</h3>
@@ -950,7 +788,7 @@
                   ">
                                 <!-- Content  -->
                                 <div class="bx-service__content">
-                                    <a class="title" href="#"> Cut operational costs by up to 40%.</a>
+                                    <a class="title" href="#">Reduce IT operational costs by up to 40%.</a>
                                     <!-- <p class="text">Respond faster to market changes and customer needs</p> -->
                                 </div>
                             </div>
@@ -962,7 +800,8 @@
                   ">
                                 <!-- Content  -->
                                 <div class="bx-service__content">
-                                    <a class="title" href="#"> Speed up application development by 60%</a>
+                                    <a class="title" href="#">Minimize downtime and enhance service availability by
+                                        over 99%</a>
                                     <!-- <p class="text">Respond faster to market changes and customer needs</p> -->
                                 </div>
                             </div>
@@ -973,7 +812,7 @@
                   ">
                                 <!-- Content  -->
                                 <div class="bx-service__content">
-                                    <a class="title" href="#">Enhance customer experience with faster, reliable apps</a>
+                                    <a class="title" href="#">Improve security compliance scores significantly.</a>
                                     <!-- <p class="text">Respond faster to market changes and customer needs</p> -->
                                 </div>
                             </div>
@@ -984,37 +823,16 @@
                   ">
                                 <!-- Content  -->
                                 <div class="bx-service__content">
-                                    <a class="title" href="#">Improve system uptime and reliability to over 99.9%</a>
+                                    <a class="title" href="#">Accelerate your digital transformation initiatives</a>
                                     <!-- <p class="text">Respond faster to market changes and customer needs</p> -->
                                 </div>
                             </div>
-                            <div class="text-center" data-wow-delay=".3s" style="
-                    visibility: visible;
-                    animation-delay: 0.3s;
-                    animation-name: fadeInUp;
-                  ">
-                                <!-- Content  -->
-                                <div class="bx-service__content">
-                                    <a class="title" href="#"> Boost innovation with agile, scalable cloud-native
-                                        platforms</a>
-                                    <!-- <p class="text">Respond faster to market changes and customer needs</p> -->
-                                </div>
-                            </div>
-
-
-
-
-
-
-
-
-
-
                         </div>
                     </div>
                 </section>
 
-                <section class="bx-achievements section-gap bg-color-1">
+
+                <section class="bx-achievements section-gap bg-white">
                     <style>
                         .bx-achievements__funfact {
                             display: grid;
@@ -1069,7 +887,7 @@
                                         animation-name: fadeInUp;
                                       ">
                                             <!-- <span class="number">A</span> -->
-                                            <h4 class="title"> Initial Assessment and Strategy Design</h4>
+                                            <h4 class="title"> Microservices Readiness Assessment</h4>
 
 
 
@@ -1078,7 +896,7 @@
                                         <!-- Single Item  -->
                                         <div class="work-process__item">
                                             <!-- <span class="number">P</span> -->
-                                            <h4 class="title"> Cloud Architecture and Modernization Planning</h4>
+                                            <h4 class="title"> Architecture Design</h4>
 
 
 
@@ -1087,7 +905,7 @@
                                         <!-- Single Item  -->
                                         <div class="work-process__item">
                                             <!-- <span class="number">I</span> -->
-                                            <h4 class="title"> Migration and Native Development</h4>
+                                            <h4 class="title"> Microservices Development and Containerization</h4>
 
 
                                         </div>
@@ -1096,7 +914,7 @@
                                         <!-- Single Item  -->
                                         <div class="work-process__item">
                                             <!-- <span class="number">O</span> -->
-                                            <h4 class="title"> Continuous Optimization and Innovation Enablement</h4>
+                                            <h4 class="title"> Deployment, Orchestration, and Optimization</h4>
 
 
                                         </div>
@@ -1112,62 +930,7 @@
                     </div>
                 </section>
 
-                <section class="bx-cta-desc mb-30 mt-30">
-                    <style>
-                        .bx-bredcrumb__menu {
-                            display: inline-block;
-                            border-radius: 4px;
-                            background: var(--bx-title-color);
-                            padding: 5px 18px;
-                            margin-bottom: 24px;
-                        }
 
-                        .bx-bredcrumb__menu li,
-                        .bx-bredcrumb__menu li a {
-                            display: inline-block;
-                            color: var(--bx-white-color);
-                            line-height: 25px;
-                            font-size: 15px;
-                            font-weight: 500;
-                            letter-spacing: 0.15px;
-                        }
-
-                        @media only screen and (max-width: 768px) {
-                            .mt-90 {
-                                margin-top: 90px;
-                            }
-                        }
-
-                        .mt-30 {
-                            margin-top: 30px;
-                        }
-
-                        .mb-30 {
-                            margin-bottom: 30px;
-                        }
-                    </style>
-                    <div class="container bx-container">
-                        <div class="bx-cta-desc__inner">
-                            <div class="bx-cta-desc__content">
-
-                                <h3 class="title  mb-30">
-                                    Success Story
-                                </h3>
-                                <p class="mt-30">
-                                    A financial services company needed to upgrade its legacy systems to keep pace with
-                                    digital trends. 9USRcraft developed a custom cloud-native application integrated
-                                    through advanced APIs. Within three months, the company achieved a 40% increase in
-                                    operational efficiency, improved user satisfaction scores by 35%, and streamlined
-                                    internal processes clearly, setting a new benchmark for digital excellence
-                                </p>
-                            </div>
-                            <div class="bx-cta-desc__content " data-wow-delay=".3s"
-                                style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
-                                <img src="./assets/images/financial-center.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </section>
 
                 <section class="bx-achievements section-gap bg-color-1" style="display: none;">
                     <style>
@@ -1180,7 +943,7 @@
                     </style>
                     <div class="container bx-container">
                         <div class="bx-section-head text-center mb-30">
-                            <h3>Our Digital Transformation Expertise</h3>
+                            <h3>Our Cloud Expertise</h3>
                         </div>
                         <div class="row align-items-center mt-30">
                             <div class="col-lg-12 col-12">
@@ -1317,38 +1080,29 @@
                 </section>
 
 
-
-
-
-
                 <section class="bx-call-action bg-primary-color position-relative">
-                    <style>
-                        .mt-30 {
-                            margin-top: 30px;
-                        }
-
-                        .mb-30 {
-                            margin-bottom: 30px;
-                        }
-
-                        .pb-30 {
-                            padding-bottom: 30px;
-                        }
-                    </style>
                     <div class="container bx-container">
-                        <img class="paper-plane updown-ani" src="assets/images/icons/white-plane.png" alt="white-plane">
+                        <img class="paper-plane updown-ani" src="assets/images/icons/white-plane.png"
+                            alt="white-plane" />
                         <div class="justify-content-center">
-                            <div class="bx-call-action__content ">
+                            <div class="bx-call-action__content">
                                 <h3 class="title ">
                                     Connect Clearly, Act Quickly
                                 </h3>
-                                <p class="text " data-wow-delay=".3s"
-                                    style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
-                                    We're always here to support your digital needs. Contact us for quick responses and
-                                    clear guidance. Let's start your tech journey together today
+                                <p class="text " data-wow-delay=".3s" style="
+                      visibility: visible;
+                      animation-delay: 0.3s;
+                      animation-name: fadeInUp;
+                    ">
+                                    We're always here to support your digital needs. Contact us
+                                    for quick responses and clear guidance. Let's start your
+                                    tech journey together today
                                 </p>
-                                <div class="bx-section-head__btn  text text-reset pb-30" data-wow-delay=".3s"
-                                    style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                                <div class="bx-section-head__btn  text text-reset" data-wow-delay=".3s" style="
+                      visibility: visible;
+                      animation-delay: 0.3s;
+                      animation-name: fadeInUp;
+                    ">
                                     <a href="contact-us.html" class="bx-section-head__label bg-white">Contact Us<i
                                             class="fi-rr-arrow-right"></i></a>
                                 </div>

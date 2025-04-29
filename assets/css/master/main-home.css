@@ -16,7 +16,7 @@
 }
 
 .bx-hero__slider-items {
-  padding-top: 186px;
+  padding-top: 110px;
 }
 
 .bx-hero__slider-items::before {
@@ -26,13 +26,13 @@
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(6px);
+  /* background: rgba(0, 0, 0, 0.1); */
+  /* backdrop-filter: blur(6px); */
 }
 
 .bx-hero__bg {
   position: absolute;
-  top: 0;
+  top: 35px;
   left: 0;
   z-index: -1;
   width: 100%;
@@ -46,9 +46,9 @@
 }
 
 .bx-hero__slider .owl-item.active .bx-hero__bg {
-  -webkit-animation: zoomin 25s ease-in infinite;
+  /* -webkit-animation: zoomin 25s ease-in infinite;
   animation: zoomin 25s ease-in infinite;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; */
 }
 
 .bx-hero__wrapper {
@@ -135,7 +135,7 @@
 }
 
 .bx-hero__content h1 span {
-  color: rgba(255, 255, 255, 0.78);
+  color: #46E874;
   font-family: Literata;
   font-size: 77px;
   font-style: italic;
@@ -148,7 +148,7 @@
 .bx-hero__content-btm {
   gap: 58px;
   align-items: center;
-  margin-top: 98px;
+  margin-top: 50px;
   opacity: 0;
   -webkit-transform: translateY(50px);
   -moz-transform: translateY(50px);
@@ -601,7 +601,7 @@
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(0, 16, 21, 0.7);
+  background: #005FFF;
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease;
@@ -667,10 +667,11 @@
 
 .bx-service__card:hover .bx-service__icon img {
   transform: scale(1);
+  border-radius: 100%;
 }
 
 .bx-service__number {
-  color: #583AC;
+  color: #005FFF;
   font-size: 20px;
   font-weight: 700;
   line-height: 25px;
@@ -1512,7 +1513,7 @@
 
 .bx-blog__wrapper {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   margin-top: 40px;
 }
@@ -1527,10 +1528,10 @@
   transition: all 0.3s ease;
 }
 
-.bx-blog__card:hover {
+/* .bx-blog__card:hover {
   background: var(--bx-white-color);
   border: 1px solid transparent;
-}
+} */
 
 .bx-blog__cover {
   min-width: 306px;
@@ -1585,7 +1586,7 @@
 }
 
 .bx-blog__meta .date {
-  color: #583AC;
+  color: #3a3a3a;
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
@@ -1595,6 +1596,7 @@
   margin-bottom: 16px;
   font-size: 26px;
   font-weight: 400;
+  line-height: 32px;
 }
 
 .bx-blog__content .title a {
@@ -2012,7 +2014,7 @@
 
   /* Service  */
   .bx-service__wrapper {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   /* CTA Description  */
